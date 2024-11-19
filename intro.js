@@ -12,7 +12,7 @@
      });*/
      tl.from(".shipContainer", {
          opacity: 0,
-         duration: 0.8
+         duration: 1.2
      });
      tl.fromTo(".shipContainer", {
          margin: "0 20%",
@@ -26,6 +26,7 @@
          bottom: "auto",
          width: "0",
          opacity: 0,
+         ease: "power1.inout",
          duration: 2
      }, 2);
      tl.from(".banner", {
