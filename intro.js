@@ -10,7 +10,7 @@
          opacity: 0,
          //duration: 2
      });*/
-     tl.from(".shipContainer", {
+     /*tl.from(".shipContainer", {
          opacity: 0,
          duration: 1.2
      });
@@ -28,7 +28,7 @@
          opacity: 0,
          ease: "power1.inout",
          duration: 2
-     }, 2);
+     }, 2);*/
      tl.from(".banner", {
          opacity: 0,
          scale: 0,
