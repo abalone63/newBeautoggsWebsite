@@ -62,6 +62,14 @@ html {
     box-sizing: inherit;
 }
 
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
 body {
     background-color: #cccccc;
     -webkit-box-sizing: border-box;
@@ -163,10 +171,11 @@ nav ul li a:hover {
 #kontakt,
 #band {
     padding-top: var(--headerHeight);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #band {
+    margin: 0 30%;
     -ms-flex-line-pack: center;
     align-content: center;
     -webkit-box-align: center;
@@ -175,7 +184,7 @@ nav ul li a:hover {
 }
 
 p {
-    padding: 0 30%;
+    padding: 0;
 }
 
 #kontakt {
@@ -216,4 +225,16 @@ a.textlink {
 
 a.textlink:hover {
     color: #cc6633;
+}
+
+@media (max-width: 600px) {
+    #band {
+        margin:0 5%;
+    }
+.desktop {
+    display: none;
+}
+.mobile {
+    display: block;
+}
 }
