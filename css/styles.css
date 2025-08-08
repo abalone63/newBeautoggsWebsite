@@ -84,6 +84,10 @@ body {
     flex-direction: column;
 }
 
+h2, h3 {
+    font-family: 'Patrick Hand', sans-serif;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -173,7 +177,8 @@ nav ul li a:hover {
     min-height: 100vh;
 }
 
-#band {
+#band,
+#impressum {
     margin: 0 30%;
     -ms-flex-line-pack: center;
     align-content: center;
