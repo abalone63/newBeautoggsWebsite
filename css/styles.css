@@ -47,12 +47,6 @@
     --headerHeight: 270px;
 }
 
-@media (max-width: 600px) {
-    :root {
-        --headerHeight: 200px;
-    }
-}
-
 html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -66,17 +60,18 @@ html {
     box-sizing: inherit;
 }
 
+/*Bandfoto landscape für Desktop*/
 .desktop {
     display: block;
 }
 
+/*Bandfoto porträt für Mobile*/ 
 .mobile {
     display: none;
 }
 
 body {
     background-color: #cccccc;
-    -webkit-box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     color: #140d07;
@@ -141,7 +136,7 @@ nav {
 
 nav ul {
     display: inline-flex;
-    padding: 0;
+    padding-left: 0;
     list-style: none;
 }
 
@@ -172,7 +167,8 @@ nav ul li a:hover {
 
 #index,
 #kontakt,
-#band {
+#band,
+#impressum {
     padding-top: var(--headerHeight);
     min-height: 100vh;
 }
@@ -184,10 +180,6 @@ nav ul li a:hover {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-}
-
-p {
-    padding: 0;
 }
 
 #kontakt {
@@ -231,6 +223,9 @@ a.textlink:hover {
 }
 
 @media (max-width: 600px) {
+    :root {
+        --headerHeight: 200px;
+    }
     #band {
         margin: 0 5%;
     }
@@ -239,5 +234,13 @@ a.textlink:hover {
     }
     .mobile {
         display: block;
+    }
+    a[href^="tel"] {
+        text-decoration: underline;
+        cursor: pointer;
+        color: inherit;
+    }
+    small {
+        font-size: 70%;
     }
 }
