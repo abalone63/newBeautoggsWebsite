@@ -43,10 +43,14 @@
     content: "\ea9d";
 }
 
-
-
 :root {
     --headerHeight: 270px;
+}
+
+@media (max-width: 600px) {
+    :root {
+        --headerHeight: 200px;
+    }
 }
 
 html {
@@ -136,9 +140,8 @@ nav {
 }
 
 nav ul {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
+    padding: 0;
     list-style: none;
 }
 
@@ -228,13 +231,16 @@ a.textlink:hover {
 }
 
 @media (max-width: 600px) {
-    #band {
-        margin:0 5%;
+    :root {
+        --headerHeight: 200px;
     }
-.desktop {
-    display: none;
-}
-.mobile {
-    display: block;
-}
+    #band {
+        margin: 0 5%;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
 }
