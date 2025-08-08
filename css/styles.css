@@ -103,7 +103,7 @@ header {
         "banner members"
         "nav nav";
     width: 100vw;
-    height: 270px;
+    height: var(--headerHeight);
     padding: 0 5%;
     position: fixed;
 }
@@ -231,9 +231,6 @@ a.textlink:hover {
 }
 
 @media (max-width: 600px) {
-    :root {
-        --headerHeight: 200px;
-    }
     #band {
         margin: 0 5%;
     }
