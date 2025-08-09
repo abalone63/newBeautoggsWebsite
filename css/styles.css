@@ -65,7 +65,7 @@ html {
     display: block;
 }
 
-/*Bandfoto porträt für Mobile*/ 
+/*Bandfoto porträt für Mobile*/
 .mobile {
     display: none;
 }
@@ -84,7 +84,8 @@ body {
     flex-direction: column;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-family: 'Patrick Hand', sans-serif;
 }
 
@@ -139,6 +140,8 @@ nav {
 }
 
 nav ul {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     padding-left: 0;
     list-style: none;
@@ -231,20 +234,26 @@ a.textlink:hover {
     :root {
         --headerHeight: 200px;
     }
-    #band {
+
+    #band,
+    #impressum {
         margin: 0 5%;
     }
+
     .desktop {
         display: none;
     }
+
     .mobile {
         display: block;
     }
+
     a[href^="tel"] {
         text-decoration: underline;
         cursor: pointer;
         color: inherit;
     }
+
     small {
         font-size: 70%;
     }
